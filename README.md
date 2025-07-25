@@ -5,6 +5,7 @@
 This is an end-to-end business intelligence (BI) and analytics project that simulates a real-world scenario for a fictional online mouse shop. The primary goal is to transform raw and unstructured sales data into actionable business insights. 
 The project showcases a complete ELT (Extract, Load, Transform) pipeline, moving from it's initial data generation to a final, shareable business report.
 
+
 ## Technologies Used
 
 *   **Python:** The core language for data generation and orchestration.
@@ -13,6 +14,21 @@ The project showcases a complete ELT (Extract, Load, Transform) pipeline, moving
 *   **SQL:** The primary language for querying, filtering, joining, and aggregating data.
 *   **Matplotlib/Seaborn:** For data visualization and creating insightful charts.
 *   **JupyterLab:** Used as the main IDE for analysis.
+
+
+## Getting Started
+To run this analysis locally, you will need Python and JupyterLab installed, preferably via the Anaconda distribution.
+### 1. Clone the repository
+git clone https://github.com/toothless66622242525/sales_analytics_for_mouse_shop.git
+cd sales_analytics_for_mouse_shop
+### 2. Run the Data Pipeline
+The notebooks are designed to be run in sequence:
+* **01_data_generation.ipynb**: Execute this notebook first to create the initialproducts.xlsxandsales.xlsxfiles.
+* **02_create_database.ipynb**: Run this next to load the data from the Excel files into thepasha_mouse_shop.dbSQLite database.
+* **03_business_analysis.ipynb**: This is the main analysis notebook. You can now run all cells to perform the SQL queries and generate the visualizations.
+### 3. (Optional) Re-run with New Data
+You can modify the data generation parameters in the first notebook and re-run the entire pipeline to see how the analysis changes.
+
 
 ## Project Structure & Pipeline
 
@@ -30,6 +46,7 @@ This project is structured as a modular ELT pipeline, with each notebook represe
     *   Connects to the SQLite database.
     *   Uses SQL queries to answer key business questions.
     *   Visualizes the results to create a final report.
+
 
 ## Key Business Questions & Insights
 
